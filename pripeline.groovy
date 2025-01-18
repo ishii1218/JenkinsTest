@@ -15,5 +15,11 @@ pipeline {
                 echo 'Directory created at C:\\temp\\my-new-directory'
             }
         }
+        stage('Run Python Script') {
+            steps {
+                bat 'hello_world.py'
+                echo 'Python script executed successfully'
+            }
+        }
     }
 }
